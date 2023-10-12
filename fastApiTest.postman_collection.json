@@ -1,0 +1,227 @@
+{
+	"info": {
+		"_postman_id": "e327c5cc-02bd-4919-832f-6d7d2ea86605",
+		"name": "fastApiTest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "4137657"
+	},
+	"item": [
+		{
+			"name": "GetAllCars",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{localhost}}/getAllCars",
+					"host": [
+						"{{localhost}}"
+					],
+					"path": [
+						"getAllCars"
+					],
+					"query": [
+						{
+							"key": "limit",
+							"value": "2",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetFirstFiveAndLastFive",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{localhost}}/getFirstFiveAndLastFive",
+					"host": [
+						"{{localhost}}"
+					],
+					"path": [
+						"getFirstFiveAndLastFive"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MostExpensiveCompany",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{localhost}}/mostExpensiveCompany",
+					"host": [
+						"{{localhost}}"
+					],
+					"path": [
+						"mostExpensiveCompany"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DetailsToyotaCars",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{localhost}}/detailsToyotaCars",
+					"host": [
+						"{{localhost}}"
+					],
+					"path": [
+						"detailsToyotaCars"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CountCarsByCompany",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{localhost}}/countCarsByCompany",
+					"host": [
+						"{{localhost}}"
+					],
+					"path": [
+						"countCarsByCompany"
+					],
+					"query": [
+						{
+							"key": "company",
+							"value": "audi",
+							"description": "Optional",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MaxPriceByCompany",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{localhost}}/maxPriceByCompany",
+					"host": [
+						"{{localhost}}"
+					],
+					"path": [
+						"maxPriceByCompany"
+					],
+					"query": [
+						{
+							"key": "company",
+							"value": "audi",
+							"description": "Optional",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LoadCars",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{localhost}}/loadCars",
+					"host": [
+						"{{localhost}}"
+					],
+					"path": [
+						"loadCars"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AverageMileageByCompany",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{localhost}}/averageMileageByCompany",
+					"host": [
+						"{{localhost}}"
+					],
+					"path": [
+						"averageMileageByCompany"
+					],
+					"query": [
+						{
+							"key": "company",
+							"value": "audi",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "OrderByPrice",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{localhost}}/orderByPrice",
+					"host": [
+						"{{localhost}}"
+					],
+					"path": [
+						"orderByPrice"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "localhost",
+			"value": "http://127.0.0.1:8000",
+			"type": "string"
+		}
+	]
+}
